@@ -1,6 +1,7 @@
 import Hero from './hero.png';
 import Card from './Card';
 import CodeImg from './exImg.png';
+import Code2Img from './exImg3.png'
 import ArtImg from './exImg2.png';
 
 function Home() {
@@ -14,11 +15,11 @@ function Home() {
             </div>
             <div className='card-examples'>
                 <Card 
-                    title="Collaborative Godot W.I.P. Game"
+                    title="Untitled Godot Game"
                     type="Code"
                     image={CodeImg}
                     alt="Example game image"
-                    description="Mystery-ridden puzzle game set in the Ming Dynasty. CSP + Godot Engine."
+                    description="Mystery-ridden puzzle game set in the Ming Dynasty. Collaboration. WIP."
                 />
                 <Card 
                     title="'Flowing Catastrophe'"
@@ -28,11 +29,11 @@ function Home() {
                     description="Created scene and expression via an original character and storyline."
                 />
                 <Card 
-                    title="Collaborative Godot W.I.P. Game"
+                    title="Beatha na mara"
                     type="Code"
-                    image={CodeImg}
-                    alt="Example game image"
-                    description="Mystery-ridden puzzle game set in the Ming Dynasty"
+                    image={Code2Img}
+                    alt="Example app image"
+                    description="Self-Logging application for aquatic life sightings in Ireland"
                 />
             </div>
         </>
