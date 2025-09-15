@@ -16,7 +16,7 @@ function Home() {
                             strings={[
                                 "peer.",
                                 "teacher.",
-                                "rep.",
+                                "representative.",
                             ]}
                             typeSpeed={30}
                             backSpeed={50}
