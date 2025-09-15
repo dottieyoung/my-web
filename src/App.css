@@ -1,3 +1,24 @@
+body {
+  background-color: rgb(209, 255, 125);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Jua', sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+} 
+
+footer a {
+  color: azure;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 /* nav */
 .nav-links {
@@ -51,37 +72,44 @@ small {
   color: aliceblue;
 }
 
-/* home */
+/* hero */
+.hero-div {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
 .hero-png {
   max-width: 100%;
-  background-color: aqua;
 }
 
-body {
-  background-color: rgb(209, 255, 125);
+.hero-overlay {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: rgb(44, 19, 108);
+}
+
+/* about */
+.about-intro {
   display: flex;
   flex-direction: column;
-  font-family: 'Jua', sans-serif;
-
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-} 
-
-footer a {
-  color: azure;
-}
-a:hover {
-  text-decoration: underline;
+/* gallery */
+.gallery-intro {
+  text-align: center;
 }
 
 /* cards */
 .card-examples {
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 .card {
@@ -91,7 +119,6 @@ a:hover {
   margin: 10px;
   border-radius: 10px;
   background-color: rgb(243, 255, 193);
-  align-items: center;
   transition: transform 0.5s ease;
 }
 
@@ -111,8 +138,8 @@ a:hover {
 
 @media (max-width: 600px) {
   .card-examples {
-    transform: scale(0.9);
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -121,7 +148,5 @@ a:hover {
   width: 100%;
   object-fit: cover;
   margin: auto;
-  justify-content: center;
-  align-items: center;
   border-radius: 8px;
 }

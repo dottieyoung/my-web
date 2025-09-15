@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import catImg from './catpng.png';
+import catImg from '../assets/catpng.png';
 
 function Nav() {
 
