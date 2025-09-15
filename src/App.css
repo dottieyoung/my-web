@@ -1,38 +1,127 @@
-.App {
+
+/* nav */
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  gap: 100px;
+}
+
+.nav-png {
+  display: block;
+  width: 200px;
+  padding: 5px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.nav-png:hover {
+  transform: scale(1.1);
+}
+
+
+nav {
+  background-color: rgb(209, 255, 125);
+  padding: 0;
+  margin: 0;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(41, 5, 101);
+}
+
+.footer-links {
+    padding: 10px;
+
+}
+
+.footer-links a {
+    border-radius: 100%;
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+small {
+  color: aliceblue;
+}
+
+/* home */
+.hero-png {
+  max-width: 100%;
+  background-color: aqua;
+}
+
+body {
+  background-color: rgb(209, 255, 125);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Jua', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+} 
+
+footer a {
+  color: azure;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* cards */
+.card-examples {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  padding: 16px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(243, 255, 193);
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.card-desc, .card-type {
+  margin: 0%;
+}
+
+.card-title {
+  font-size: medium;
+  text-decoration: underline;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card:hover {
+  transform: scale(1.05);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  .card-examples {
+    transform: scale(0.9);
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card-img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  border-radius: 8px;
 }
